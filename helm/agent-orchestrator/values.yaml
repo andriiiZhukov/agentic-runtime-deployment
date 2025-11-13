@@ -1,6 +1,6 @@
 image:
-  repository: ghcr.io/andreyvalerievich1/agents/orchestrator
-  tag: "1.0.0"
+  repository: ghcr.io/andriiizhukov/agents/orchestrator
+  tag: "sha-c21d33a"
   pullPolicy: IfNotPresent
 
 envFrom:

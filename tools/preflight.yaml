@@ -4,7 +4,7 @@ helm_chart: ./helm/agent-orchestrator
 values_file: ./helm/agent-orchestrator/values.yaml
 ingress_host: agents.example.com
 oci_refs:
-  - ghcr.io/you/agents/agent-bundle:v1.0.0
+  - ghcr.io/andriiizhukov/agents/orchestrator:sha-c21d33a
 required_secrets:
   - agent-secrets
 required_crds:
