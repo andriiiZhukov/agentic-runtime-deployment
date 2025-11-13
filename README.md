@@ -28,12 +28,9 @@ docker push ghcr.io/you/agents/orchestrator:1.0.0
     Run helm upgrade --install
     Wait for rollout status
     Wait for /health/ready
+    Run smoke POST /execute
 
-5. Run smoke POST /execute
-
-or
-
-Manually:
+5. Manual testing:
 
 curl -s https://agents.example.com/health/ready
 curl -s -X POST https://agents.example.com/execute \
