@@ -1,0 +1,13 @@
+namespace: agents
+helm_release: agent-orchestrator
+helm_chart: ./helm/agent-orchestrator
+values_file: ./helm/agent-orchestrator/values.yaml
+ingress_host: agents.example.com
+oci_refs:
+  - ghcr.io/you/agents/agent-bundle:v1.0.0
+required_secrets:
+  - agent-secrets
+required_crds:
+  - scaledobjects.keda.sh      # если используете KEDA
+  # - rayservices.ray.io       # если используете RayService
+terraform_dir: ./infra/terraform  # опционально
