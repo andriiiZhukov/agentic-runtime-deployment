@@ -8,6 +8,6 @@ oci_refs:
 required_secrets:
   - agent-secrets
 required_crds:
-  - scaledobjects.keda.sh      # если используете KEDA
-  # - rayservices.ray.io       # если используете RayService
-terraform_dir: ./infra/terraform  # опционально
+  - scaledobjects.keda.sh
+  # - rayservices.ray.io
+terraform_dir: ./infra/terraform
