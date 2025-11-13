@@ -28,7 +28,8 @@ docker push ghcr.io/you/agents/orchestrator:1.0.0
     Run helm upgrade --install
     Wait for rollout status
     Wait for /health/ready
-    Run smoke POST /execute
+
+5. Run smoke POST /execute
 
 or
 
@@ -44,7 +45,7 @@ curl -s -X POST http://agents.example.com/execute \
  -H 'content-type: application/json' \
  -d '{"query":"ping"}'
 
-5. Should be installed:
+6. Should be installed:
    helm
    terraform
    oras
